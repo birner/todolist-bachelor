@@ -1,0 +1,164 @@
+body {
+  background-image: url("/app/img/paper.gif");
+  font-family: sans-serif;
+  font: Verdana, Geneva, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+.header {
+  background-color: #000;
+  height: 40px;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.app-name {
+  font: "Courier New", Courier, monospace;
+  font-size: 2em;
+}
+.list {
+  display: inline-block;
+  margin: 1em;
+  min-width: 10em;
+  vertical-align: top;
+  text-decoration: none;
+  color: #000;
+  background: #87CEFA;
+  padding: 1em;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.list-header {
+  overflow: auto;
+  padding: 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.add-list {
+  margin: 0px auto;
+}
+.list-name {
+  float: left;
+  color: #fff;
+  font-size: 1.2em;
+  width: 85%;
+}
+.list-add-note {
+  float: left;
+  margin-right: 0.5em;
+}
+.list-delete {
+  float: right;
+  padding: 2px 6px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  visibility: hidden;
+  width: 15%;
+  box-sizing: border-box;
+}
+.list-header:hover .list-delete {
+  visibility: visible;
+}
+.add-list, .list-add-note button {
+  cursor: pointer;
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+}
+.list-delete button {
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+.notes {
+  margin: 0.5em;
+  padding-left: 0;
+  max-width: 10em;
+  list-style: none;
+}
+.note {
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+.note .value {
+  /* force to use inline-block so that it gets minimum height */
+  display: inline-block;
+  width: 85%;
+}
+.note .delete {
+  float: right;
+  padding: 2px 6px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  visibility: hidden;
+  width: 15%;
+}
+.note:hover .delete {
+  visibility: visible;
+}
+.listForm {
+  float: right;
+  margin-right: 20%;
+}
+input[type=text] {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: #fff 1px solid;
+  padding: 6px 10px;
+  text-align: center;
+  color: white;
+  margin-top: 7px;
+  background-color: transparent;
+}
+input[type=submit] {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: #fff 1px solid;
+  border-left: 0px;
+  padding: 6px 10px;
+  text-align: center;
+  color: #000;
+  margin-top: 7px;
+  background-color: white;
+}
+.noteForm input[type=text] {
+  width: 80%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.noteForm input[type=submit] {
+  width: 20%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+/*first component*/
+.btn{
+    background-color: cornflowerblue;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin: 20px 0px 0px 20px;
+    padding: 5px 10px;
+}
